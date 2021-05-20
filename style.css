@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+}
+.overall-content {
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#profile-icon {
+    margin-left: auto;
+    margin-right: 30px;
+    /* margin-top: 1px; */
+    font-size: 22px;
+}
+#subDiv1 {
+    border: 1px solid rgb(1, 43, 153);
+    width: 100%;
+    height: 30px;
+    background-color: rgb(1, 43, 153);
+    color: white;
+    padding-left: 10px;
+    display: flex;
+}
+#subDiv1 a {
+    color: white;
+    text-decoration: none;
+}
+#subDiv1 p {
+    margin-left: 20px;
+    margin-top: 2px;
+}
+#navbar {
+    /* border: 1px solid red; */
+    height: 40px;
+    width: 85%;
+}
+#search {
+    border: 1px solid rgb(1, 43, 153);
+    background-color: rgb(1, 43, 153);
+    width: 15%;
+}
+#box {
+    border: 1px solid rgb(1, 43, 153);
+    width: 60%
+}
+#flex1 {
+    display: flex;
+}
+#div2 {
+    margin-top: 2px;
+}
+#navbar {
+    display: flex;
+}
+#navbar ul {
+    display: flex;
+    margin-top: 8px;
+    width: 50%;
+}
+#navbar select {
+    color: rgb(229, 254, 1);
+    background-color: rgb(1, 43, 153);
+    margin-left: 100px;
+    border-radius: 2px;
+    padding-left: 10px;
+}
+#navbar ul li {
+    list-style: none;
+    margin-right: 15px;
+}
+#navbar ul li a {
+    text-decoration: none;
+    color: rgb(1, 43, 153);
+}
+#navbar ul li a:hover {
+    text-decoration: underline;
+    color: lightblue;
+}
+#search select {
+    width: 85%;
+    height: 38px;
+    color: rgb(229, 254, 1);
+    background-color: rgb(1, 43, 153);
+}
+#search > i {
+    color: rgb(229, 254, 1);
+}
+#div3 {
+    /* border: 1px solid red; */
+    height: auto;
+    margin-top: 2px;
+}
+#dashboard {
+    border: 1px solid rgb(245, 245, 245);
+    height: auto;
+    background-color: rgb(245, 245, 245);
+}
+#user {
+    border: 1px solid black;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+    color: black;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+#dashboard ul {
+    list-style: none;
+    margin-left: -25px;
+    padding-right: 5px;
+}
+#dashboard ul li a{
+    text-decoration: none;
+    /* color: black; */
+    font-size: 13px;
+}
+#flex2 {
+    display: flex;
+    border: 1px solid rgb(1, 43, 153);
+    padding-top: 7px;
+    padding-bottom: 5px;
+    background-color: rgb(1, 43, 153);
+    margin-top: 5px;
+    border-radius: 2px;
+}
+#flex2 li a {
+    color: white;
+}
+/* #hide {
+    display: flex;
+    border: 1px solid rgb(1, 43, 153);
+    padding-top: 7px;
+    padding-bottom: 5px;
+    background-color: rgb(1, 43, 153);
+    margin-top: 5px;
+    border-radius: 2px;
+}
+#hide > i {
+    color: white;
+    margin-left: auto;
+    margin-right: 15px;
+}
+#hide li a {
+    color: white;
+} */
+#subscription {
+    border: 1px solid white;
+    background-color: white;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-top: 0px;
+    border-radius: 2px;
+}
+#subscription a {
+    color: black;
+}
+#subscription li a > i {
+    margin-right: 10px;
+}
+#profile {
+    border: 1px solid rgb(245, 245, 245);
+    border-left: 2px solid rgb(1, 43, 153);
+    background-color: rgb(245, 245, 245);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-top: 0px;
+    border-radius: 2px;
+}
+#profile a {
+    color: rgb(1, 43, 153);
+}
+#profile li a > i {
+    margin-right: 10px;
+}
+#logout {
+    border: 1px solid white;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-top: 0px;
+    border-radius: 2px;
+}
+#logout a {
+    color: black;
+}
+#logout li a > i {
+    margin-right: 10px;
+}
+#flex3 {
+    display: flex;
+    border: 1px solid rgb(1, 43, 153);
+    padding-top: 7px;
+    padding-bottom: 5px;
+    background-color: rgb(1, 43, 153);
+    margin-top: 5px;
+    border-radius: 2px;
+}
+#flex3 li a {
+    color: white;
+}
+#flex3 > i {
+    color: white;
+    margin-left: auto;
+    margin-right: 15px;
+}
+#sections {
+    border: 1px solid white;
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: white;
+    height: 305px;
+}
+#sections h6 {
+    text-align: center;
+}
+#sections ul li {
+    border-bottom: 1px solid rgb(245, 245, 245);
+}
+#sections ul li a {
+    color: black;
+}
+#content {
+    border: 1px solid rgb(204, 204, 204);
+    background-color: rgb(204, 204, 204);
+    height: auto;
+    margin-left: -25px;
+}
+#aboveline {
+    border: 1px solid rgb(1, 43, 153);
+    background-color: rgb(1, 43, 153);
+    color: rgb(229, 254, 1);
+    text-align: center;
+    font-size: 7px;
+}
+#letter {
+    border: 1px solid white;
+    height: auto;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    /* display: flex; */
+    background-color: white;
+}
+#flex4 {
+    display: flex;
+}
+#subletter {
+    border: 1px solid rgb(229, 254, 1);
+    height: auto;
+    width: 5%;
+    /* margin-right: auto; */
+    margin-left: 5%;
+}
+#subsubletter {
+    border: 1px solid black;
+    height: auto;
+    width: 85%;
+}
+#subsubletter h5 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+}
+#subsubletter p.sup {
+    text-align: center;
+    font-style: italic;
+}
+#subsubletter p.num {
+    text-align: right;
+}
+#subsubletter p.presided {
+    text-align: left;
+}
+#subsubletter p.date {
+    text-align: right;
+}
+#subsubletter p.law {
+    text-align: left;
+    font-size: 13px;
+}
+#subsubletter p.judicial {
+    text-align: left;
+    font-size: 13px;
+}
+.issue h6 {
+    font-weight: bolder;
+}
+.issue p {
+    font-size: 13px;
+    padding-left: 55px;
+}
+.facts h6 {
+    font-weight: bolder;
+}
+.facts p {
+    font-size: 13px;
+    text-indent: 55px;
+    /* padding-left: 55px; */
+}
+#top {
+    display: flex;
+    /* border: 1px solid; */
+    width: 85%;
+    margin-left: 10%;
+    font-size: 12px;
+}
+#line {
+    border: 1px solid black;
+    width: 85%;
+    margin-left: 10%;
+    margin-top: -18px;
+    margin-bottom: 15px;
+}
+.nwlr {
+    margin-right: auto;
+}
+.diran {
+    margin-left: auto;
+    margin-right: auto;
+}
+.a75 {
+    margin-left: auto;
+}
+#savecase {
+    /* border: 1px solid green; */
+    height: auto;
+    margin-left: -25px;
+}
+#save {
+    border: 1px solid rgb(1, 43, 153);
+    background-color: rgb(1, 43, 153);
+    width: 50%;
+    color: white;
+    text-align: center;
+    margin-left: 0.5%;
+}
+#navSearch {
+    border: 2px solid black;
+    margin-left: 0.5%;
+}
+#navSearch p {
+    height: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    color: rgb(1, 43, 153);
+}
+#secpages {
+    display: flex;
+    margin-top: 5px;
+}
+#sectionPages {
+    border: 2px solid black;
+    margin-top: 1%;
+}
+#secpages p {
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+    background-color: rgb(1, 43, 153);
+    color: white;
+    padding: 5px;
+    margin-top: -5px;
+}
+input#text {
+    width: 90%;
+    padding-left: 10px;
+}
+#la-search {
+    border: 1px solid black;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    transform: rotate(90deg);
+}
+#empty {
+    border: 1px solid black;
+    width: 99%;
+    height: 500px;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+    margin-bottom: 5%;
+}
+#footer {
+    border: 1px solid rgb(60, 60, 60);
+    background-color: rgb(60, 60, 60);
+    color: white;
+    display: flex;
+    height: 30px;
+}
+#details {
+    display: flex;
+    margin-left: auto;
+}
+#details p {
+    margin-right: 20px;
+}
+#hide {
+    display: none;
+}
+@media only screen and  (min-width:321px) and (max-width:540px) {
+    #search {
+        display: none;
+    }
+    #box {
+        display: none;
+    }
+    #profile-icon {
+        margin-right: 10px;
+    }
+    #navbar select {
+        margin-left: auto;
+        margin-right: -50px;
+    }
+    #flex1 {
+        height: 50px;
+    }
+    /* #flex2 {
+        display: none;
+    }
+    #hide {
+        display: flex;
+    } */
+    /* #menuList {
+        overflow: hidden;
+        transition: 1.0s;
+    }
+    #sections {
+        margin-top: 20px;
+    } */
+}
