@@ -67,6 +67,10 @@
                 <div class="row">
                     <div class="col-md-2">
                         <div id="dashboard">
+                            <div id="hide">
+                                <p><a href=""><i class="far fa-user" id="user"></i> Dashboard</a></p>
+                                <i class="fas fa-plus" id="change" onclick="togglemenu()"></i>
+                            </div>
                             <ul id="menuList">
                                 <div id="flex2">
                                     <li><a href=""><i class="far fa-user" id="user"></i> Dashboard</a></li>
@@ -81,11 +85,11 @@
                                 <div id="logout">
                                     <li><a href=""><i class="fas fa-power-off"></i> Logout</a></li>
                                 </div>
-                                <div id="flex3">
-                                    <li><a href=""><i class="fas fa-coins" id="user"></i></i> Indexes</a></li>
-                                    <i class="fas fa-plus"></i>
-                                </div>
                             </ul>
+                            <div id="flex3">
+                                <p><a href=""><i class="fas fa-coins" id="user"></i></i> Indexes</a></p>
+                                <i class="fas fa-plus"></i>
+                            </div>
 
                             <div id="sections">
                                 <h6>Sections</h6>
@@ -214,18 +218,26 @@
                 </div>
             </div>
 
-            <div id="footer">
-                <p>&#169 2019 Nigerian Law Publications Ltd.</p>
-                <div id="details">
-                    <p><i class="fas fa-tty"></i> 01-6316950</p>
-                    <p><i class="fas fa-envelope"></i> contact@nigerianlawpublications.com</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="footer">
+                        <p>&#169 2019 Nigerian Law Publications Ltd.</p>
+                        <div id="details">
+                            <p><i class="fas fa-tty"></i> 01-6316950</p>
+                            <p id="showLast"><i class="fas fa-envelope"></i> contact@nigerianlawpublications.com</p>
+                            <p id="hideLast"><i class="fas fa-envelope"></i> 
+                                contact@nigerian- <br>
+                                lawpublications.com
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
 
 
-        <!-- <script>
+        <script>
             var menulist = document.getElementById(menuList);
 
             menuList.style.maxHeight = "0px";
@@ -233,6 +245,7 @@
             function togglemenu() {
                 if(menuList.style.maxHeight == "0px") {
                     menuList.style.maxHeight = "250px";
+                    // document.getElementById(change).innerHTML = <i class="fas fa-plus"></i>
                 }
                 else {
                     menuList.style.maxHeight = "0px";
@@ -240,7 +253,7 @@
             }
 
 
-        </script> -->
+        </script>
 
         <script
         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"

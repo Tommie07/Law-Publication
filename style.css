@@ -93,10 +93,36 @@
     height: auto;
     margin-top: 2px;
 }
+#menuList {
+    overflow: hidden;
+    transition: 1.0s;
+}
 #dashboard {
     border: 1px solid rgb(245, 245, 245);
     height: auto;
     background-color: rgb(245, 245, 245);
+}
+#hide {
+    display: flex;
+    border: 1px solid rgb(1, 43, 153);
+    padding-top: 7px;
+    /* padding-bottom: 5px; */
+    background-color: rgb(1, 43, 153);
+    margin-top: 5px;
+    border-radius: 2px;
+    margin-left: 8px;
+    margin-right: 5px;
+    height: 38px;
+}
+#hide p a {
+    color: white;
+    text-decoration: none;
+}
+#hide > i {
+    color: white;
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: 5px;
 }
 #user {
     border: 1px solid black;
@@ -133,23 +159,6 @@
 #flex2 li a {
     color: white;
 }
-/* #hide {
-    display: flex;
-    border: 1px solid rgb(1, 43, 153);
-    padding-top: 7px;
-    padding-bottom: 5px;
-    background-color: rgb(1, 43, 153);
-    margin-top: 5px;
-    border-radius: 2px;
-}
-#hide > i {
-    color: white;
-    margin-left: auto;
-    margin-right: 15px;
-}
-#hide li a {
-    color: white;
-} */
 #subscription {
     border: 1px solid white;
     background-color: white;
@@ -200,18 +209,23 @@
     display: flex;
     border: 1px solid rgb(1, 43, 153);
     padding-top: 7px;
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
     background-color: rgb(1, 43, 153);
     margin-top: 5px;
     border-radius: 2px;
+    margin-left: 8px;
+    margin-right: 5px;
+    height: 38px;
 }
-#flex3 li a {
+#flex3 p a {
     color: white;
+    text-decoration: none;
 }
 #flex3 > i {
     color: white;
     margin-left: auto;
     margin-right: 15px;
+    margin-top: 5px;
 }
 #sections {
     border: 1px solid white;
@@ -404,9 +418,15 @@ input#text {
 #details p {
     margin-right: 20px;
 }
-#hide {
+#flex2 {
     display: none;
 }
+#hideLast {
+    display: none;
+}
+/* #hide {
+    display: none;
+} */
 @media only screen and  (min-width:321px) and (max-width:540px) {
     #search {
         display: none;
@@ -417,6 +437,9 @@ input#text {
     #profile-icon {
         margin-right: 10px;
     }
+    #navbar ul {
+        width: 100%;
+    }
     #navbar select {
         margin-left: auto;
         margin-right: -50px;
@@ -424,17 +447,30 @@ input#text {
     #flex1 {
         height: 50px;
     }
-    /* #flex2 {
-        display: none;
-    }
-    #hide {
+    /* #hide {
         display: flex;
+    }
+    #flex2 {
+        display: none;
     } */
-    /* #menuList {
+    #menuList {
         overflow: hidden;
         transition: 1.0s;
     }
-    #sections {
-        margin-top: 20px;
-    } */
+    #save {
+        width: 100%;
+        margin-top: 10px;
+    }
+    input#text {
+        padding-left: 8%;
+    }
+    #footer {
+        height: 100px;
+    }
+    #showLast {
+        display: none;
+    }
+    #hideLast {
+        display: block;
+    }
 }
