@@ -444,6 +444,10 @@ input#text {
         margin-left: auto;
         margin-right: -50px;
     }
+    #sections {
+        margin-left: 0;
+        margin-right: 0;
+    }
     #flex1 {
         height: 50px;
     }
@@ -484,5 +488,110 @@ input#text {
     #empty {
         margin-left: 24px;
         width: auto;
+    }
+}
+@media only screen and  (min-width:541px) and (max-width:720px) {
+    #search {
+        display: none;
+    }
+    #box {
+        display: none;
+    }
+    #profile-icon {
+        margin-right: 10px;
+    }
+    #navbar ul {
+        width: 100%;
+    }
+    #navbar select {
+        margin-left: auto;
+        margin-right: -50px;
+    }
+    #sections {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #flex1 {
+        height: 50px;
+    }
+    /* #hide {
+        display: flex;
+    }
+    #flex2 {
+        display: none;
+    } */
+    #menuList {
+        overflow: hidden;
+        transition: 1.0s;
+    }
+    #save {
+        width: 100%;
+        margin-top: 10px;
+    }
+    input#text {
+        padding-left: 8%;
+    }
+    #footer {
+        height: auto;
+        padding-left: 5%;
+        padding-right: 1%;
+    }
+    #footer p {
+        margin-bottom: 0;
+    }
+    #showLast {
+        display: none;
+    }
+    #hideLast {
+        display: block;
+    }
+    #details p {
+        margin-left: 1%;
+    }
+    #empty {
+        margin-left: 24px;
+        width: auto;
+    }
+}
+@media only screen and  (min-width:721px) and (max-width:767px) {
+    #navbar ul {
+        width: 100%;
+    }
+    #search select {
+        width: 78%;
+    }
+    #navbar {
+        height: 50px;
+    }
+    #sections {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    input#text {
+        padding-left: 8%;
+        width: 95%;
+    }
+    #empty {
+        margin-left: 24px;
+        width: auto;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and  (min-width:768px) and (max-width:1024px) {
+    #search select {
+        width: 78%;
+    }
+    #navbar {
+        height: 52px;
+    }
+    #flex3 p {
+        color: white;
+    }
+    input#text {
+        padding-left: 8%;
+        width: 80%;
+    }
+    #empty {
+        height: 590px;
     }
 }

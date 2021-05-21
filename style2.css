@@ -98,10 +98,36 @@
     height: auto;
     margin-top: 2px;
 }
+#menuList {
+    overflow: hidden;
+    transition: 1.0s;
+}
 #dashboard {
     border: 1px solid rgb(245, 245, 245);
     height: 850px;
     background-color: rgb(245, 245, 245);
+}
+#hide {
+    display: flex;
+    border: 1px solid rgb(1, 43, 153);
+    padding-top: 7px;
+    /* padding-bottom: 5px; */
+    background-color: rgb(1, 43, 153);
+    margin-top: 5px;
+    border-radius: 2px;
+    margin-left: 8px;
+    margin-right: 5px;
+    height: 38px;
+}
+#hide p a {
+    color: white;
+    text-decoration: none;
+}
+#hide > i {
+    color: white;
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: 5px;
 }
 #user {
     border: 1px solid black;
@@ -417,4 +443,125 @@
 }
 #details p {
     margin-right: 20px;
+}
+#flex2 {
+    display: none;
+}
+#hideLast {
+    display: none;
+}
+@media only screen and (min-width:321px) and (max-width:540px) {
+    #dashboard {
+        height: auto;
+    }
+    #search {
+        display: none;
+    }
+    #box {
+        display: none;
+    }
+    #profile-icon {
+        margin-right: 10px;
+    }
+    #navbar ul {
+        width: 100%;
+    }
+    #navbar select {
+        margin-left: auto;
+        margin-right: -50px;
+    }
+    #navbar {
+        height: 55px;
+    }
+    #name {
+        text-align: center;
+    }
+    #weekly p {
+        padding-left: 10%;
+    }
+    #part1 #subPart1 #part1774 p.part1774 {
+        padding-left: 5%;
+    }
+    #part2 #subPart1 #part1774 p.part1774 {
+        padding-left: 5%;
+    }
+    #part1 #subPart1 #part1774 p.date1 {
+        margin-right: 2%;
+    }
+    #part2 #subPart1 #part1774 p.date1 {
+        margin-right: 2%;
+    }
+    #amudaFlex {
+        display: block;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #amuda {
+        width: 100%;
+    }
+    #statoil {
+        width: 100%;
+    }
+    #part1 {
+        height: auto;
+    }
+    #amuda p > i {
+        display: none;
+    }
+    #statoil p > i {
+        display: none;
+    }
+    
+    #amuda1 {
+        width: 100%;
+    }
+    #statoil1 {
+        width: 100%;
+    }
+    #part2 {
+        height: auto;
+    }
+    #amuda1 p > i {
+        display: none;
+    }
+    #statoil1 p > i {
+        display: none;
+    }
+
+    #amuda2 {
+        width: 100%;
+    }
+    #statoil2 {
+        width: 100%;
+    }
+    #amuda2 p > i {
+        display: none;
+    }
+    #statoil2 p > i {
+        display: none;
+    }
+
+    #amuda3 {
+        width: 100%;
+    }
+    #statoil3 {
+        width: 100%;
+    }
+    #amuda3 p > i {
+        display: none;
+    }
+    #statoil3 p > i {
+        display: none;
+    }
+    #footer {
+        height: auto;
+        padding-left: 5%;
+        padding-right: 1%;
+    }
+    #showLast {
+        display: none;
+    }
+    #hideLast {
+        display: block;
+    }
 }
