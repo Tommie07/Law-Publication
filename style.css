@@ -465,14 +465,24 @@ input#text {
         padding-left: 8%;
     }
     #footer {
-        height: 120px;
-        padding-left: 1%;
+        height: auto;
+        padding-left: 5%;
         padding-right: 1%;
+    }
+    #footer p {
+        margin-bottom: 0;
     }
     #showLast {
         display: none;
     }
     #hideLast {
         display: block;
+    }
+    #details p {
+        margin-left: 1%;
+    }
+    #empty {
+        margin-left: 24px;
+        width: auto;
     }
 }
