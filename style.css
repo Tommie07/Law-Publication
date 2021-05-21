@@ -465,7 +465,9 @@ input#text {
         padding-left: 8%;
     }
     #footer {
-        height: 100px;
+        height: 120px;
+        padding-left: 1%;
+        padding-right: 1%;
     }
     #showLast {
         display: none;
