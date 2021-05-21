@@ -563,6 +563,9 @@ input#text {
     #navbar {
         height: 50px;
     }
+    #search select {
+        height: 47px;
+    }
     #sections {
         margin-left: 0;
         margin-right: 0;
@@ -593,5 +596,8 @@ input#text {
     }
     #empty {
         height: 590px;
+    }
+    #hide p a {
+        font-size: 10px;
     }
 }
