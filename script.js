@@ -3,7 +3,7 @@ $(document).ready(function(){
     const bar = document.getElementsByClassName("menu-icon");
 
     $(".menu-icon").click(function(){
-        $(".mobileContent").slideDown()
+        $(".mobileContent").fadeIn()
     });
     $(".mobileContent").click(function(){
         $(".mobileContent").fadeOut()
