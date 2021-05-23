@@ -1,7 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
+    box-sizing: border-box;
+}
+body{
     margin: 0;
     padding: 0;
+    font-family: 'Poppins',sans-serif !important;
+}
+.mobileContent {
+    width:100%;
+    height: 100vh;
+    position: fixed;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+    bottom: 0;
+    left:0;
+    z-index: 9999;
+    color: white;
+    display: none;
+}
+.mobileContent ul li {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+.mobileContent ul li a {
+    color: white;
+    text-decoration: none;
 }
 .overall-content {
     width: 100%;
@@ -38,6 +61,11 @@
     height: 40px;
     width: 85%;
 }
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
 #search {
     border: 1px solid rgb(1, 43, 153);
     background-color: rgb(1, 43, 153);
@@ -50,6 +78,10 @@
 #box input {
     width: 100%;
     height: 40px;
+    padding-left: 15px;
+}
+::placeholder{
+    font-size: 14px;
 }
 #flex1 {
     display: flex;
@@ -284,8 +316,9 @@
     color: rgb(1, 43, 153);
     margin-top: 10px;
     margin-left: 10px;
-    border-bottom: 2px solid rgb(1, 43, 153);
+    border-bottom: 2px solid rgba(1, 43, 153, 0.1);
     display: flex;
+    margin-bottom: 15px;
 }
 #subPart1 div p.date1 {
     border: 1px solid rgb(1, 43, 153);
@@ -294,6 +327,8 @@
     padding: 2px;
     margin-left: auto;
     margin-bottom: 5px;
+    padding-right: 10px;
+    margin-right: 20px;
 }
 #amudaFlex {
     display: flex;
@@ -301,147 +336,139 @@
 #amuda {
     width: 50%;
     padding-left: 1%;
+    padding-right: 20px;
+}
+#amuda div {
+    display: flex;
 }
 #amuda1 {
     width: 50%;
     padding-left: 1%;
+    padding-right: 20px;
+}
+#amuda1 div {
+    display: flex;
 }
 #amuda2 {
     width: 50%;
     padding-left: 1%;
+    padding-right: 20px;
+}
+#amuda2 div {
+    display: flex;
 }
 #amuda3 {
     width: 50%;
     padding-left: 1%;
+    padding-right: 20px;
+}
+#amuda3 div {
+    display: flex;
 }
 #amuda p {
     color: rgb(1, 43, 153);
+    font-size: 15px;
 }
 #amuda1 p {
     color: rgb(1, 43, 153);
+    font-size: 15px;
 }
 #amuda2 p {
     color: rgb(1, 43, 153);
+    font-size: 15px;
 }
 #amuda3 p {
     color: rgb(1, 43, 153);
+    font-size: 15px;
 }
-#amuda p:nth-child(1) > i {
+#amuda div  i {
     color: green;
-    margin-left: 40.5%;
+    margin-left: auto;
 }
-#amuda p:nth-child(2) > i {
+#amuda1 div i {
     color: green;
-    margin-left: 19.5%;
+    margin-left: auto;
 }
-#amuda1 p:nth-child(1) > i {
+#amuda2 div i {
     color: green;
-    margin-left: 29.5%;
+    margin-left: auto;
 }
-#amuda1 p:nth-child(2) > i {
+#amuda3 div i {
     color: green;
-    margin-left: 37.5%;
-}
-#amuda1 p:nth-child(3) > i {
-    color: green;
-    margin-left: 36%;
-}
-#amuda2 p:nth-child(1) > i {
-    color: green;
-    margin-left: 16%;
-}
-#amuda2 p:nth-child(2) > i {
-    color: green;
-    margin-left: 39.6%;
-}
-#amuda3 p:nth-child(1) > i {
-    color: green;
-    margin-left: 44%;
-}
-#amuda3 p:nth-child(2) > i {
-    color: green;
-    margin-left: 34.5%;
-}
-#amuda3 p:nth-child(3) > i {
-    color: green;
-    margin-left: 34%;
+    margin-left: auto;
 }
 #statoil {
     width: 50%;
+    padding-right: 20px;
+}
+#statoil div {
+    display: flex;
 }
 #statoil1 {
     width: 50%;
+    padding-right: 20px;
+}
+#statoil1 div {
+    display: flex;
 }
 #statoil2 {
     width: 50%;
+    padding-right: 20px;
+}
+#statoil2 div {
+    display: flex;
 }
 #statoil3 {
     width: 50%;
+    padding-right: 20px;
+}
+#statoi3 div {
+    display: flex;
 }
 #statoil p {
     color: rgb(1, 43, 153);
+    font-size: 15px;
 }
 #statoil1 p {
     color: rgb(1, 43, 153);
+    font-size: 15px;
 }
 #statoil2 p {
     color: rgb(1, 43, 153);
+    font-size: 15px;
 }
 #statoil3 p {
     color: rgb(1, 43, 153);
+    font-size: 15px;
 }
-#statoil p:nth-child(1) > i {
+#statoil div i {
     color: green;
-    margin-left: 20%;
+    margin-left: auto;
 }
-#statoil p:nth-child(2) > i {
+#statoil1 div i {
     color: green;
-    margin-left: 44.6%;
+    margin-left: auto;
 }
-#statoil1 p:nth-child(1) > i {
+#statoil2 div i {
     color: green;
-    margin-left: 38.9%;
+    margin-left: auto;
 }
-#statoil1 p:nth-child(2) > i {
+#statoil3 div i {
     color: green;
-    margin-left: 45%;
+    margin-left: auto !important;
 }
-#statoil1 p:nth-child(3) > i {
-    color: green;
-    margin-left: 29.3%;
-}
-#statoil2 p:nth-child(1) > i {
-    color: green;
-    margin-left: 42.8%;
-}
-#statoil2 p:nth-child(2) > i {
-    color: green;
-    margin-left: 44.6%;
-}
-#statoil3 p:nth-child(1) > i {
-    color: green;
-    margin-left: 44.5%;
-}
-#statoil3 p:nth-child(2) > i {
-    color: green;
-    margin-left: 45%;
-}
-#statoil3 p:nth-child(3) > i {
-    color: green;
-    margin-left: 36%;
-}
-#footer {
+footer {
     border: 1px solid rgb(60, 60, 60);
     background-color: rgb(60, 60, 60);
     color: white;
-    display: flex;
-    height: 30px;
+    padding-top:20px;
+    height: auto;
 }
-#details {
-    display: flex;
+.details {
+
     margin-left: auto;
 }
-#details p {
+.details p {
     margin-right: 20px;
 }
 #flex2 {
@@ -462,6 +489,17 @@
     }
     #profile-icon {
         margin-right: 10px;
+    }
+    #navbar ul#tab {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+        margin-left: 20px;
+    }
+    #tab {
+        overflow: hidden;
+        transition: 1.0s;
     }
     #navbar ul {
         width: 100%;
@@ -498,65 +536,74 @@
     }
     #amuda {
         width: 100%;
+        padding-right: 0;
     }
     #statoil {
         width: 100%;
+        padding-right: 0;
     }
     #part1 {
         height: auto;
     }
-    #amuda p > i {
+    /* #amuda p > i {
         display: none;
     }
     #statoil p > i {
         display: none;
-    }
+    } */
     
     #amuda1 {
         width: 100%;
+        padding-right: 0;
     }
     #statoil1 {
         width: 100%;
+        padding-right: 0;
     }
     #part2 {
         height: auto;
     }
-    #amuda1 p > i {
+    /* #amuda1 p > i {
         display: none;
     }
     #statoil1 p > i {
         display: none;
-    }
+    } */
 
     #amuda2 {
         width: 100%;
+        padding-right: 0;
     }
     #statoil2 {
         width: 100%;
+        padding-right: 0;
     }
-    #amuda2 p > i {
+    /* #amuda2 p > i {
         display: none;
     }
     #statoil2 p > i {
         display: none;
-    }
+    } */
 
     #amuda3 {
         width: 100%;
+        padding-right: 0;
     }
     #statoil3 {
         width: 100%;
+        padding-right: 0;
     }
-    #amuda3 p > i {
+    /* #amuda3 p > i {
         display: none;
     }
     #statoil3 p > i {
         display: none;
-    }
-    #footer {
+    } */
+    footer {
         height: auto;
         padding-left: 5%;
         padding-right: 1%;
+        font-size: 12px;
     }
     #showLast {
         display: none;
